@@ -1,21 +1,38 @@
 <form>
     <legend> Formulario de Cadastro de Pessoas </legend>
-    <fieldset id="usuario"><legend>identificação do Usuário</legend>
-        <p>Nome:</p>
-    </fieldset id="Nascimento">
-    <fieldset>
-        <p>Data de Nascimento</p>
-    </fieldset >
-    <fieldset id="sexo">
-        <legend>Sexo</legend>
-        Masculino
-        Feminino
-    </fieldset >
-    <fieldset id="musicas">
-        Gostos Musicais:
+    <br>
+    <fieldset id="usuario">
+        <legend>identificação do Usuário</legend>
+        <p>Nome: <input type="text" name="tNome" id="cNome" size="50" maxlenght="50" placeholder="Nome Completo" </p>
     </fieldset>
-    <fieldset id="cor">
-        Raça:
+    <br>
+    <fieldset id="Nascimento">
+        <p>Data de Nascimento <input type="date"></p>
+    </fieldset>
+    <fieldset id="sexo">
+        <legend>Sexo </legend>
+        <select name="Sexo">
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+
+        </select>
+    </fieldset>
+    <br>
+    <fieldset id="musicas">
+        <p>Gostos Musicais: </p>
+        <ul>
+            <li><input type="checkbox"> Rock</li>
+            <li><input type="checkbox"> Sertanejo</li>
+            <li><input type="checkbox"> Funk</li>
+            <li><input type="checkbox"> Gospel</li>
+        </ul>
+    </fieldset>
+    <br>
+    <fieldset>
+        <p>Raca </p>
+        <li><input type="radio" id="pardo" name="breed"><label for="pardo">Pardo</label> </li>
+        <li><input type="radio" id="Negro" name="breed"> <label for="Negro">Negro</label></li>
+        <li><input type="radio" id="Branco" name="breed"> <label for="Branco">Branco</label></li>
     </fieldset>
 
 
